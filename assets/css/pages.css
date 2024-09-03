@@ -1,0 +1,16 @@
+.underline{
+    text-decoration: underline;
+}
+
+.container{
+    margin-top: 80px; /* Define a distância entre o topo da página e as divs, para que fiquem abaixo do header */
+    padding: 20px;
+    position: absolute;
+    top: 60px; /* 60px abaixo do header */
+    left: 220px; /* 220px da borda esquerda */
+    width: 80%;
+    height: 232px;
+    background-color: #DEDEDE;
+    color: #111111; 
+    font-family: 'Poppins', sans-serif;
+}
