@@ -128,6 +128,9 @@ nav a:hover {
     width: 100%;
     height: 100vh;
     background-color: #F7F7F7;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .modelos-section .left-modelos {
@@ -141,10 +144,15 @@ nav a:hover {
 
 .modelos-section span {
     font-size: 1rem;
+    font-weight: 500;
 }
 
 .modelos-section h3 {
     font-size: 3rem;
+}
+
+.modelos-section h3 b {
+    color: #4DAE47;
 }
 
 .modelos-section p {
@@ -158,4 +166,24 @@ nav a:hover {
     color: #4DAE47;
     border-bottom: 3px solid #4DAE47;
     background: none;
+    font-size: 1.1rem;
+    font-weight: 400;
+    transition: all 0.25s;
 }
+
+.modelos-section button:hover {
+    cursor: pointer;
+    opacity: 70%;
+}
+
+.modelos-section .right-modelos {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.right-modelos img {
+    height: 100%;
+}
+
