@@ -1,6 +1,7 @@
 
 header {
     background-color: #4cae4700;
+    position: absolute;
 }
 
 .img-background {
@@ -41,7 +42,7 @@ header {
     margin-left: 10%;
 }
 
-.hero-image {
+.carouselExampleIndicators {
     width: 50%; /* A imagem ocupa a metade da largura da tela */
     height: 90vh; /* A imagem ocupa 90% da altura da tela */
     object-fit: cover; /* Faz com que a imagem cubra a área sem distorcer */
@@ -88,13 +89,13 @@ header {
     background-color: #F7F7F7;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .modelos-section .left-modelos {
-    width: 50%;
+    width: 55%;
     padding: 40px;
-    padding-left: 10%;
+    padding-left: 5%;
     gap: 20px;
     display: flex;
     flex-direction: column;
@@ -137,19 +138,34 @@ header {
 }
 
 .modelos-section .right-modelos {
-    width: 50%;
+    width: 40%;
     height: 100%;
+    align-self: flex-end;
     display: flex;
     justify-content: flex-end;
+    overflow: hidden; /* Evita que as imagens ultrapassem a altura da seção */
 }
 
-.right-modelos img {
-    height: 100%;
+.right-modelos .carousel-inner {
+    height: 100%; /* Garante que o carrossel ocupe toda a altura da seção */
 }
+
+.right-modelos .carousel-item {
+    height: 100%; /* Garante que cada item do carrossel ocupe toda a altura disponível */
+}
+
+.right-modelos .carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: fill; /* Ajusta a imagem para cobrir o container sem deformar */
+}
+
+
+
 
 .escolha-section {
     width: 100%;
-    height: 100vh;
+    height: 110vh;
     background-color: white;
     display: flex;
     justify-content: center;
@@ -159,6 +175,8 @@ header {
 .escolha-section h2 {
     margin-left: 20%;
     font-size: 2.5rem;
+    margin-bottom: 20px;
+    margin-top: 40px;
 }
 
 .items {
@@ -169,10 +187,27 @@ header {
 
 .item {
     width: 30%;
-    height: 100%;
+    height: 80%;
+    transition: all 0.25s;
+}
+
+.item:hover {
+    cursor: pointer;
+    transform: scale(1.03);
 }
 
 .item img {
     width: 100%;
     height: 100%;
+}
+
+.title-item {
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+
+.valor-item {
+    margin: 0;
+    padding: 0;
+    font-size: 15pt;
 }
