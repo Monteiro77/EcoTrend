@@ -8,6 +8,7 @@ body {
 
 /* O main deve preencher a altura restante da tela */
 main {
+    padding: 2%;
     flex: 1; /* Faz o main ocupar o espaço restante */
     display: flex;
     align-items: stretch; /* Garante que o main use a altura total disponível */
@@ -41,8 +42,6 @@ footer {
     margin-right: 0;
 }
 
-
-
 .container-content{
     height: 100%;
 }
@@ -74,10 +73,6 @@ ul {
 .input-tamanho{
     width: fit-content;
 }
-
-
-
-
 
 
 /* 
