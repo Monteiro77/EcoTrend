@@ -1,0 +1,152 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../../default.css">
+    <link rel="stylesheet" href="../css/pages.css">
+    <!-- Seu css aqui -->
+    <title>Eco Trend</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">Eco Society</div>
+        <nav>
+            <a href="#produtos">Produtos</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container-1">
+            <h2>TODOS OS GÊNEROS PARA TE ENCANTAR</h2>
+            <h1 class="underline">Sua casa sustentável</h1>
+        </div>
+        <!-- Contêiner de Filtros -->
+        <div class="filter bg-success text-white p-3 position-fixed" style="width: 15%; top: 40%; left: 0;">
+            <h2 class="title text-center">Tipo de produto</h2>
+            <div class="d-flex justify-content-between align-items-center">
+                <label for="roupas" class="mb-0">Roupas</label>
+                <input type="checkbox" id="roupas">
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+                <label for="tecnologia-verde" class="mb-0">Tecnologia Verde</label>
+                <input type="checkbox" id="tecnologia-verde">
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+                <label for="casa" class="mb-0">Casa</label>
+                <input type="checkbox" id="casa">
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+                <label for="beleza" class="mb-0">Beleza</label>
+                <input type="checkbox" id="beleza">
+            </div>
+
+            <h2 class="title text-center mt-4">Preço</h2>
+            <div class="d-flex justify-content-between align-items-center">
+                <label for="menos-200" class="mb-0">Menos de R$200,00</label>
+                <input type="checkbox" id="menos-200">
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+                <label for="200-400" class="mb-0">R$200,00 até R$400,00</label>
+                <input type="checkbox" id="200-400">
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+                <label for="400-600" class="mb-0">R$400,00 até R$600,00</label>
+                <input type="checkbox" id="400-600">
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+                <label for="mais-600" class="mb-0">Mais de R$600,00</label>
+                <input type="checkbox" id="mais-600">
+            </div>
+        </div>
+
+        <!-- Contêiner para todos os produtos -->
+        <div class="products-container  mt-5">
+            <!-- Primeiro Produto -->
+            <div class="product row align-items-center mb-4">
+                <div class="col-md-5 d-flex justify-content-end">
+                    <img src="../img/GreenTech Smart Plug.png" alt="Foto do Produto" class="img-fluid">
+                </div>
+                <div class="product-info col-md-7">
+                    <div class="square mb-2"></div>
+                    <h2 class="h4">GreenTech Smart Plug</h2>
+                    <p> O GreenTech Smart Plug transforma qualquer tomada comum em uma tomada inteligente que pode ser
+                        controlada remotamente. Ideal para reduzir o consumo de energia e monitorar o uso elétrico,
+                        ajudando a economizar na conta de luz.</p>
+                    <div class="product-price d-flex align-items-center">
+                        <span class="text-success h4 mr-4">R$49,50</span>
+                        <button class="buy-button btn btn-success">COMPRAR <i
+                                class="fa-solid fa-arrow-right-long"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Segundo Produto -->
+            <div class="product product-background row align-items-center mb-4">
+                <div class="col-md-3 ">
+                    <img src="../img/Bluetooth Speaker.png" alt="Foto do Novo Produto" class="img-fluid">
+                </div>
+                <div class="product-info col-md-9">
+                    <div class="square mb-2"></div>
+                    <h2 class="h4">EcoSound Bluetooth Speaker</h2>
+                    <p>O EcoSound Bluetooth Speaker oferece som de alta qualidade em um design sustentável. Feito com
+                        materiais reciclados e com uma bateria de longa duração, é perfeito para quem deseja curtir
+                        música com consciência ambienta</p>
+                    <div class="product-price d-flex align-items-center">
+                        <span class="text-success h4 mr-4">R$649,59</span>
+                        <button class="buy-button btn btn-success">COMPRAR <i
+                                class="fa-solid fa-arrow-right-long"></i></button></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Terceiro Produto -->
+            <div class="product row align-items-center mb-4">
+                <div class="col-md-5 d-flex justify-content-end">
+                    <img src="../img/Air Purifier.png" alt="Foto do Produto" class="img-fluid">
+                </div>
+                <div class="product-info col-md-7 ">
+                    <div class="square mb-2"></div>
+                    <h2 class="h4">GreenWave Energy-Air Purifier</h2>
+                    <p>O GreenWave Energy-Efficient Air Purifier é um purificador de ar que utiliza tecnologia avançada
+                        para filtrar partículas e poluentes do ar, enquanto consome menos energia. Ideal para manter a
+                        qualidade do ar em sua casa de forma ecológica.</p>
+                    <div class="product-price d-flex align-items-center">
+                        <span class="text-success h4 mr-4">R$149,99</span>
+                        <button class="buy-button btn btn-success">COMPRAR <i
+                                class="fa-solid fa-arrow-right-long"></i></button></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quarto Produto -->
+            <div class="product product-background row align-items-center mb-4">
+                <div class="col-md-3">
+                    <img src="../img/Desk Lamp.png" alt="Foto do Novo Produto" class="img-fluid">
+                </div>
+                <div class="product-info col-md-9">
+                    <div class="square mb-2"></div>
+                    <h2 class="h4">EcoBright LED Desk Lamp</h2>
+                    <p>A EcoBright LED Desk Lamp é uma luminária de mesa que combina design moderno com eficiência
+                        energética. Feita com materiais sustentáveis, ela oferece uma iluminação clara e ajustável
+                        enquanto minimiza o impacto ambiental.</p>
+                    <div class="product-price d-flex align-items-center">
+                        <span class="text-success h4 mr-4">R$79,99</span>
+                        <button class="buy-button btn btn-success">COMPRAR <i
+                                class="fa-solid fa-arrow-right-long"></i></button></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Incluindo o Bootstrap JS e dependências -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>

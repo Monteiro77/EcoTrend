@@ -1,0 +1,154 @@
+<html lang="pt-br"></html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../../default.css">
+    <link rel="stylesheet" href="../css/pages.css">
+    <!-- Seu css aqui -->
+    <title>Eco Trend</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">Eco Society</div>
+        <nav>
+            <a href="#produtos">Produtos</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container-1">
+            <h2>TODOS OS GÊNEROS PARA TE ENCANTAR</h2>
+            <h1 class="underline">Sua casa sustentável</h1>
+        </div>
+        <!-- Contêiner de Filtros -->
+        <div class="filter bg-success text-white p-3 position-fixed" style="width: 15%; top: 40%; left: 0;">
+            <h2 class="title text-center">Tipo de produto</h2>
+            <div class="d-flex justify-content-between align-items-center">
+                <label for="roupas" class="mb-0">Roupas</label>
+                <input type="checkbox" id="roupas">
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+                <label for="tecnologia-verde" class="mb-0">Tecnologia Verde</label>
+                <input type="checkbox" id="tecnologia-verde">
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+                <label for="casa" class="mb-0">Casa</label>
+                <input type="checkbox" id="casa">
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+                <label for="beleza" class="mb-0">Beleza</label>
+                <input type="checkbox" id="beleza">
+            </div>
+
+            <h2 class="title text-center mt-4">Preço</h2>
+            <div class="d-flex justify-content-between align-items-center">
+                <label for="menos-200" class="mb-0">Menos de R$200,00</label>
+                <input type="checkbox" id="menos-200">
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+                <label for="200-400" class="mb-0">R$200,00 até R$400,00</label>
+                <input type="checkbox" id="200-400">
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+                <label for="400-600" class="mb-0">R$400,00 até R$600,00</label>
+                <input type="checkbox" id="400-600">
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+                <label for="mais-600" class="mb-0">Mais de R$600,00</label>
+                <input type="checkbox" id="mais-600">
+            </div>
+        </div>
+
+        <!-- Contêiner para todos os produtos -->
+        <div class="products-container  mt-5">
+            <!-- Primeiro Produto -->
+            <div class="product row align-items-center mb-4">
+                <div class="col-md-5 d-flex justify-content-end">
+                    <img src="../img/GreenLeaf .png" alt="Foto do Produto" class="img-fluid">
+                </div>
+                <div class="product-info col-md-7">
+                    <div class="square mb-2"></div>
+                    <h2 class="h4">GreenLeaf Deodorant Cream</h2>
+                    <p>O GreenLeaf Deodorant Cream é um desodorante natural e eficaz que usa ingredientes sustentáveis
+                        para
+                        manter você fresco e seco ao longo do dia. Livre de alumínio e parabenos, é gentil com a pele e
+                        com
+                        o meio ambiente.</p>
+                    <div class="product-price d-flex align-items-center">
+                        <span class="text-success h4 mr-4">R$49,59</span>
+                        <button class="buy-button btn btn-success">COMPRAR <i class="fa-solid fa-arrow-right-long"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Segundo Produto -->
+            <div class="product product-background row align-items-center mb-4">
+                <div class="col-md-3 ">
+                    <img src="../img/shampoo.png" alt="Foto do Novo Produto" class="img-fluid">
+                </div>
+                <div class="product-info col-md-9">
+                    <div class="square mb-2"></div>
+                    <h2 class="h4">Monday Harmony Shampoo Bar</h2>
+                    <p>O Herbal Harmony Shampoo Bar é um shampoo sólido feito com ingredientes naturais e orgânicos,
+                        ideal
+                        para todos os tipos de cabelo. Sua fórmula concentrada reduz o desperdício de embalagem e
+                        proporciona uma limpeza suave e eficaz.</p>
+                    <div class="product-price d-flex align-items-center">
+                        <span class="text-success h4 mr-4">R$89,99</span>
+                        <button class="buy-button btn btn-success">COMPRAR <i class="fa-solid fa-arrow-right-long"></i></button></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Terceiro Produto -->
+            <div class="product row align-items-center mb-4">
+                <div class="col-md-5 d-flex justify-content-end">
+                    <img src="../img/Escova de Dente.png" alt="Foto do Produto" class="img-fluid">
+                </div>
+                <div class="product-info col-md-7 ">
+                    <div class="square mb-2"></div>
+                    <h2 class="h4">EcoFresh Bamboo Toothbrush</h2>
+                    <p>A EcoFresh Bamboo Toothbrush combina um design elegante com um compromisso com a
+                        sustentabilidade.
+                        Com cerdas biodegradáveis e cabo de bambu, é uma alternativa ecológica às escovas de dentes
+                        plásticas convencionais.</p>
+                    <div class="product-price d-flex align-items-center">
+                        <span class="text-success h4 mr-4">R$35,99</span>
+                        <button class="buy-button btn btn-success">COMPRAR <i class="fa-solid fa-arrow-right-long"></i></button></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quarto Produto -->
+            <div class="product product-background row align-items-center mb-4">
+                <div class="col-md-3">
+                    <img src="../img/balsamo.png" alt="Foto do Novo Produto" class="img-fluid">
+                </div>
+                <div class="product-info col-md-9">
+                    <div class="square mb-2"></div>
+                    <h2 class="h4">EarthEssence Lip Balm</h2>
+                    <p>O EarthEssence Lip Balm é um bálsamo labial feito com cera de abelha orgânica e óleos naturais
+                        que
+                        proporcionam hidratação e proteção para os lábios. Perfeito para manter seus lábios macios e
+                        saudáveis em qualquer estação.</p>
+                    <div class="product-price d-flex align-items-center">
+                        <span class="text-success h4 mr-4">R$39,99</span>
+                        <button class="buy-button btn btn-success">COMPRAR <i class="fa-solid fa-arrow-right-long"></i></button></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- Incluindo o Bootstrap JS e dependências -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
