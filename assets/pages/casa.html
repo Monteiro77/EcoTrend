@@ -21,46 +21,129 @@
         </nav>
     </header>
 
-    <div class="container-1">
-        <h2>TODOS OS GÊNEROS PARA TE ENCANTAR</h2>
-        <h1 class="underline">Sua casa sustentável</h1>
-    </div>
+    <main>
+        <div class="container-1">
+            <h2>TODOS OS GÊNEROS PARA TE ENCANTAR</h2>
+            <h1 class="underline">Sua casa sustentável</h1>
+        </div>
+        <!-- Contêiner de Filtros -->
+        <div class="filter bg-success text-white p-3 position-fixed" style="width: 15%; top: 40%; left: 0;">
+            <h2 class="title text-center">Tipo de produto</h2>
+            <div class="d-flex justify-content-between align-items-center">
+                <label for="roupas" class="mb-0">Roupas</label>
+                <input type="checkbox" id="roupas">
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+                <label for="tecnologia-verde" class="mb-0">Tecnologia Verde</label>
+                <input type="checkbox" id="tecnologia-verde">
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+                <label for="casa" class="mb-0">Casa</label>
+                <input type="checkbox" id="casa">
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+                <label for="beleza" class="mb-0">Beleza</label>
+                <input type="checkbox" id="beleza">
+            </div>
 
-    <!-- Contêiner para todos os produtos -->
-    <div class="products-container">
-        <!-- Primeiro Produto -->
-        <div class="product">
-            <img src="../img/PDP-GNestLearningTherm @1920@2x 1 (1).png" alt="Foto do Produto">
-            <div class="product-info">
-                <h2>EcoSmart Thermostat</h2>
-                <p>O EcoSmart Thermostat é um termostato inteligente que ajusta automaticamente a temperatura da sua
-                    casa com base em seus hábitos e preferências, ajudando a reduzir o consumo de energia e os custos
-                    com aquecimento e resfriamento.</p>
-                <div class="product-price">
-                    R$799,99
-                    <button class="buy-button">
-                        COMPRAR
-                    </button>
-                </div>
+            <h2 class="title text-center mt-4">Preço</h2>
+            <div class="d-flex justify-content-between align-items-center">
+                <label for="menos-200" class="mb-0">Menos de R$200,00</label>
+                <input type="checkbox" id="menos-200">
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+                <label for="200-400" class="mb-0">R$200,00 até R$400,00</label>
+                <input type="checkbox" id="200-400">
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+                <label for="400-600" class="mb-0">R$400,00 até R$600,00</label>
+                <input type="checkbox" id="400-600">
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+                <label for="mais-600" class="mb-0">Mais de R$600,00</label>
+                <input type="checkbox" id="mais-600">
             </div>
         </div>
 
-        <!-- Segundo Produto -->
-        <div class="product product-background">
-            <img src="../img/image (1).png" alt="Foto do Novo Produto">
-            <div class="product-info">
-                <h2>SolarCharge Power Bank</h2>
-                <p>O SolarCharge Power Bank é uma bateria portátil que pode ser carregada com energia solar, perfeita
-                    para carregar seus dispositivos móveis de forma ecológica durante viagens ou em casa.</p>
-                <div class="product-price">
-                    R$449,99
-                    <button class="buy-button">
-                        COMPRAR
-                    </button>
+        <!-- Contêiner para todos os produtos -->
+        <div class="products-container  mt-5">
+            <!-- Primeiro Produto -->
+            <div class="product row align-items-center mb-4">
+                <div class="col-md-5 d-flex justify-content-end">
+                    <img src="../img/thermostat.png" alt="Foto do Produto" class="img-fluid">
+                </div>
+                <div class="product-info col-md-7">
+                    <div class="square mb-2"></div>
+                    <h2 class="h4">EcoSmart Thermostat</h2>
+                    <p> O EcoSmart Thermostat é um termostato inteligente que ajusta automaticamente a temperatura da
+                        sua casa com base em seus hábitos e preferências, ajudando a reduzir o consumo de energia e os
+                        custos com aquecimento e resfriamento.</p>
+                    <div class="product-price d-flex align-items-center">
+                        <span class="text-success h4 mr-4">R$799,00</span>
+                        <button class="buy-button btn btn-success">COMPRAR <i
+                                class="fa-solid fa-arrow-right-long"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Segundo Produto -->
+            <div class="product product-background row align-items-center mb-4">
+                <div class="col-md-3 ">
+                    <img src="../img/Power Bank.png" alt="Foto do Novo Produto" class="img-fluid">
+                </div>
+                <div class="product-info col-md-9">
+                    <div class="square mb-2"></div>
+                    <h2 class="h4">SolarCharge Power Bank</h2>
+                    <p>O SolarCharge Power Bank é uma bateria portátil que pode ser carregada com energia solar,
+                        perfeita para carregar seus dispositivos móveis de forma ecológica durante viagens ou em casa.
+                    </p>
+                    <div class="product-price d-flex align-items-center">
+                        <span class="text-success h4 mr-4">R$449,99</span>
+                        <button class="buy-button btn btn-success">COMPRAR <i
+                                class="fa-solid fa-arrow-right-long"></i></button></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Terceiro Produto -->
+            <div class="product row align-items-center mb-4">
+                <div class="col-md-5 d-flex justify-content-end">
+                    <img src="../img/vacue.png" alt="Foto do Produto" class="img-fluid">
+                </div>
+                <div class="product-info col-md-7 ">
+                    <div class="square mb-2"></div>
+                    <h2 class="h4">EcoClean Robot Vacuum</h2>
+                    <p>O EcoClean Robot Vacuum é um aspirador robô que utiliza sensores avançados e um sistema de
+                        filtragem HEPA para manter sua casa limpa de maneira eficiente, reduzindo o uso de produtos
+                        químicos e economizando energia.</p>
+                    <div class="product-price d-flex align-items-center">
+                        <span class="text-success h4 mr-4">R$1579,99</span>
+                        <button class="buy-button btn btn-success">COMPRAR <i
+                                class="fa-solid fa-arrow-right-long"></i></button></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quarto Produto -->
+            <div class="product product-background row align-items-center mb-4">
+                <div class="col-md-3">
+                    <img src="../img/LED.png" alt="Foto do Novo Produto" class="img-fluid">
+                </div>
+                <div class="product-info col-md-9">
+                    <div class="square mb-2"></div>
+                    <h2 class="h4">GreenLight LED Bulbs</h2>
+                    <p>As GreenLight LED Bulbs são lâmpadas de LED de longa duração que consomem até 80% menos energia
+                        do que as lâmpadas incandescentes tradicionais, oferecendo uma iluminação eficiente e
+                        sustentável para sua casa.</p>
+                    <div class="product-price d-flex align-items-center">
+                        <span class="text-success h4 mr-4">R$39,99</span>
+                        <button class="buy-button btn btn-success">COMPRAR <i
+                                class="fa-solid fa-arrow-right-long"></i></button></button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </main>
 
     <!-- Incluindo o Bootstrap JS e dependências -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
