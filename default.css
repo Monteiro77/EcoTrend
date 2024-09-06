@@ -17,18 +17,6 @@ body{
 section{
     width: 100%;
 }
-header {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    top: 0;
-    left: 0;
-    width: 100%;
-    align-items: center;
-    padding: 10px 10%; /* Cor de fundo do cabeçalho */
-    color: white;
-    background-color: #4DAE47;
-    z-index: 1;
-}
 
 footer {
     background-color: #4DAE47 !important;
