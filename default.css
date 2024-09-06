@@ -39,26 +39,7 @@ footer {
     font-weight: 500;
     font-family: 'Poppins', sans-serif;
 }
-nav {
-    display: flex;
-}
-nav a {
-    color: white;
-    text-decoration: none;
-    margin-left: 15px;
-    font-size: 18px;
-    font-weight: 200;
-    text-decoration: none;
-}
-nav a:first-child {
-    margin-left: 0;
-}
-nav a:hover {
-    text-decoration: none;
-    opacity: 70%;
-    cursor: pointer;
-    color: white;
-}
+
 
 
 /* Estilo para navegadores baseados em WebKit (Chrome, Safari) */
