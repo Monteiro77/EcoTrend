@@ -11,13 +11,11 @@ main {
     padding: 2%;
     flex: 1; /* Faz o main ocupar o espaço restante */
     display: flex;
-    align-items: stretch; /* Garante que o main use a altura total disponível */
+    align-items: stretch; 
+    /* Garante que o main use a altura total disponível */
 }
 
-/* Ajusta a altura do footer */
-footer {
-    height: 20%;
-}
+
 
 /* Ajusta a altura mínima das colunas para preencher a altura da tela */
 .col-md-4, .col-md-8 {
@@ -75,13 +73,10 @@ ul {
 }
 
 
+
 /* 
 // Small devices (landscape phones, 576px and up) */
 @media (max-width: 860px) { 
-
-    footer {
-        display: none;
-    }
 
     .square{
         display: none;
