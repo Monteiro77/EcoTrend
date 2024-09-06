@@ -1,8 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-body, * {
-    margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.poppins{
     font-family: 'Poppins', sans-serif;
+}
+
+.bg-default {
+    background-color: #4DAE47;
 }
 
 section{
@@ -19,6 +28,11 @@ header {
     color: white;
     background-color: #4DAE47;
     z-index: 1;
+}
+
+footer {
+    background-color: #4DAE47 !important;
+    position: relative !important;
 }
 .logo {
     font-size: 24px;
@@ -70,19 +84,6 @@ nav a:hover {
 body {
     scrollbar-width: thin; /* Largura da barra de rolagem */
     scrollbar-color: #4DAE47 #f1f1f1; /* Cor da barra e da trilha */
-}
-
-
-footer {
-    width: 100%;
-    height: auto;
-    padding: 40px 0px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    bottom: 0;
-    background-color: #4DAE47;
-    color: #E0E0E2;
 }
 
 
