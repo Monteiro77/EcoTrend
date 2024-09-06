@@ -72,10 +72,55 @@ ul {
     width: fit-content;
 }
 
+@media (max-width: 375px) {
+    
+    header{
+        padding: 2%;
+    }
+    
+   
+    h1{
+        font-size: 1.5rem;
+    }
+
+    h2{
+        font-size: 1.5rem;
+    }
+
+    .col-md-4 img{
+        width: 2rem;
+    }
 
 
-/* 
-// Small devices (landscape phones, 576px and up) */
+}
+
+@media (max-width: 425px) {
+    
+   
+    main{
+        margin-bottom: 25%;
+    }
+
+    .col-md-4 img{
+        width: 100%;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    
+    footer{
+        margin-top: 1.5rem;
+    }
+
+    .col-md-4 img{
+        width: 100%;
+    }
+
+
+}
+/* // Small devices (landscape phones, 576px and up) */
 @media (max-width: 860px) { 
 
     .square{
