@@ -1,19 +1,18 @@
 
-header, .bg-default {
-    background-color: #4cae4700;
-    position:absolute
-}
 
 .img-background {
     position: absolute;
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     opacity: 100%;
     z-index: -1;
+    top: -30;
 }
 
 
-
+header {
+    background-color: #00000075;
+}
 
 .hero-section {
     display: flex;
@@ -21,7 +20,7 @@ header, .bg-default {
     justify-content: center;
     flex-direction: column;
     height: 100vh; /* Ajuste a altura conforme necessário */
-    background-color: #09241061;
+    background-color: #00000075;
 }
 .hero-section h1 {
     font-size: 3rem;

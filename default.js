@@ -5,3 +5,7 @@ const logo = document.getElementById('logoSite');
 logo.addEventListener('click', function() {
   window.location.assign('../../index.html');
 });
+
+const comeToPage = (url) => {
+    window.location.assign(url);
+}
