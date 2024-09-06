@@ -3,11 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
-    <link rel="manifest" href="../favicon/site.webmanifest">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/css/reset.css">
     <link rel="stylesheet" href="../../default.css">
     <link rel="stylesheet" href="../css/pages.css">
@@ -16,13 +12,20 @@
 </head>
 
 <body>
-    <header>
-        <div class="logo">Eco Society</div>
-        <nav>
-            <a href="#produtos">Produtos</a>
-            <a href="#sobre">Sobre</a>
-            <a href="#contato">Contato</a>
-        </nav>
+    <header class="bg-default">
+        <div class="container">
+            <div class="d-flex flex-wrap justify-content-around py-3">
+                <div class="poppins d-flex align-items-center me-md-auto fw-semibold text-white fs-2" id="logoSite">Eco Society</div>
+                <nav class="d-flex justify-content-center justify-content-md-end align-items-center gap-sm-3 gap-1 col-12 col-md-6">
+                    <a class='link-light link-underline-opacity-0 link-opacity-50-hover' href="roupas.html">Roupas</a>
+                    <a class='link-light link-underline-opacity-0 link-opacity-50-hover' href="casa.html">Casa</a>
+                    <a class='link-light link-underline-opacity-0 link-opacity-50-hover' href="beleza.html">Beleza</a>
+                    <a class='link-light link-underline-opacity-0 link-opacity-50-hover' href="tecnologia.html">Tecnologia</a>
+                    <a class='link-light link-underline-opacity-0 link-opacity-50-hover' href="sobre.html">Sobre</a>
+                    <a class='link-light link-underline-opacity-0 link-opacity-50-hover' href="contato.html">Contato</a>
+                </nav>
+            </div>
+        </div>
     </header>
 
     <main>
@@ -31,7 +34,7 @@
             <h1 class="underline">Sua casa sustentável</h1>
         </div>
         <!-- Contêiner de Filtros -->
-        <div class="filter bg-success text-white p-3 position-fixed" style="width: 15%; top: 40%; left: 0;">
+        <div class="filter bg-success text-white p-3 position-absolute" style="width: 15%; top: 40%; left: 0;">
             <h2 class="title text-center">Tipo de produto</h2>
             <div class="d-flex justify-content-between align-items-center">
                 <label for="roupas" class="mb-0">Roupas</label>
@@ -84,7 +87,7 @@
                         um evento mais formal.</p>
                     <div class="product-price d-flex align-items-center">
                         <span class="text-success h4 mr-4">R$99,00</span>
-                        <button class="buy-button btn btn-success">COMPRAR <i
+                        <button class="buy-button btn btn-success" onclick="comeToPage('detalhesProdutoRoupa.html')">COMPRAR <i
                                 class="fa-solid fa-arrow-right-long"></i></button>
                     </div>
                 </div>
@@ -103,7 +106,7 @@
                         mão do conforto.</p>
                     <div class="product-price d-flex align-items-center">
                         <span class="text-success h4 mr-4">R$149,99</span>
-                        <button class="buy-button btn btn-success">COMPRAR <i
+                        <button class="buy-button btn btn-success" onclick="comeToPage('detalhesProdutoRoupa.html')">COMPRAR <i
                                 class="fa-solid fa-arrow-right-long"></i></button></button>
                     </div>
                 </div>
@@ -122,7 +125,7 @@
                         com o ritmo urbano.</p>
                     <div class="product-price d-flex align-items-center">
                         <span class="text-success h4 mr-4">R$169,99</span>
-                        <button class="buy-button btn btn-success">COMPRAR <i
+                        <button class="buy-button btn btn-success" onclick="comeToPage('detalhesProdutoRoupa.html')">COMPRAR <i
                                 class="fa-solid fa-arrow-right-long"></i></button></button>
                     </div>
                 </div>
@@ -141,7 +144,7 @@
                         sofisticado.</p>
                     <div class="product-price d-flex align-items-center">
                         <span class="text-success h4 mr-4">R$89,99</span>
-                        <button class="buy-button btn btn-success">COMPRAR <i
+                        <button class="buy-button btn btn-success" onclick="comeToPage('detalhesProdutoRoupa.html')">COMPRAR <i
                                 class="fa-solid fa-arrow-right-long"></i></button></button>
                     </div>
                 </div>
@@ -149,8 +152,30 @@
         </div>
     </main>
 
-    <!-- Incluindo o Bootstrap JS e dependências -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <footer class="bg-default">
+        <div class="container">
+            <div class="row py-2 text-white justify-content-center">
+                <div class="col-sm poppins fw-semibold fs-4 my-3">Eco Society</div>
+                <div class="col-sm row my-3 px-0">
+                    <h4 class="col-sm poppins fw-semibold fs-5">Contato</h4>
+                    <span>+55 21 99999-9999</span>
+                    <span>contato@ecosociety.com</span>
+                </div>
+                <div class='col-sm my-3'>
+                    <h4>Informações</h4>
+                    <ul style='list-style: none;' class="list-group">
+                        <li><a class="link-light link-underline-opacity-0 link-opacity-50-hover" href="beleza.html">Produtos</a></li>
+                        <li><a class="link-light link-underline-opacity-0 link-opacity-50-hover" href="sobre.html">Sobre</a></li>
+                        <li><a class="link-light link-underline-opacity-0 link-opacity-50-hover" href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="row py-2 px-3 text-white justify-content-center">© 2024 EcoSociety. Todos os direitos reservados.</div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="../../default.js"></script>
+    <script src="../js/roupa.js"></script>
 </body>

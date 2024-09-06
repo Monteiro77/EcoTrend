@@ -54,7 +54,8 @@
 }
 
 .products-container{
-    margin-left: 0; 
+    margin-left: 15%; 
+    min-height: 100vh;
 }
 
 .container-1 {
